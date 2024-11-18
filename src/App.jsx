@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
 // planning out future imports
 import ProductList from './Assets/components/ProductList';
@@ -8,7 +8,8 @@ import AddProductForm from "./Assets/components/AddProductForm";
 
 function App() {
   // initializing an array of objects
-const products = [
+  // forgot to implement setProducts and useState here. Whoops!
+const [products, setProducts] = useState([
   {
    id: 1975,
    name: "EasyWrite Digital Stylus",
@@ -37,7 +38,7 @@ const products = [
    description: "A cutting-edge monitor for vibrant viewing."
   }
   
- ]
+ ])
 
  // task 7: implementing function to add new products
  const addProduct = (newProduct) => {

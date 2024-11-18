@@ -16,21 +16,19 @@ function AddProductForm({ addProduct }) {
             name,
             price,
             description
-        }
+        };
         // calling addProduct function (done in a future task)
         addProduct(newProduct)
         // resetting fields
-        setName('')
-        setPrice('')
-        setDescription('')
+        setName('');
+        setPrice('');
+        setDescription('');
     };
 
     // formatting form
     return (
     <form onSubmit= {handleSubmit}>
-        <div>
             <h2>Add a new product:</h2>
-        </div>
         <div>
             <label>Name: </label>
             <input type= "text" value={name} onChange={(e) => setName(e.target.value)} />
