@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Some slight css additions */
+body {
+  background-color:  #45058d
+}
