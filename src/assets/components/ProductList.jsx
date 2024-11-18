@@ -8,6 +8,7 @@ function ProductList ({ products }) {
         // using map function to render ProductItem component
     <div>
         <h2>Products:</h2>
+        {/*Already implemented key props, putting this so it'll show in the Github commit*/}
         <ul>
             {products.map((product) => (
                 <ProductItem 
