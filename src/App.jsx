@@ -1,8 +1,8 @@
-import { React } from 'react'
+import React from 'react'
 import './App.css'
 // planning out future imports
-import ProductList from "./components/ProductList";
-import AddProductForm from "./components/AddProductForm";
+import ProductList from './Assets/components/ProductList';
+import AddProductForm from "./Assets/components/AddProductForm";
 
 
 
