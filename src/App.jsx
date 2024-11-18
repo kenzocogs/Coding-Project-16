@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { React } from 'react'
 import './App.css'
 // planning out future imports
 import ProductList from "./components/ProductList";
@@ -37,7 +37,6 @@ const products = [
    description: "A cutting-edge monitor for vibrant viewing."
   }
 
-  
  ]
 
 // passing list of products to ProductList component
