@@ -1,3 +1,5 @@
+// NOTE: When using Live Server, I could not get my code to function at all - not sure why.
+
 import React, { useState } from 'react'
 import './App.css'
 // planning out future imports
