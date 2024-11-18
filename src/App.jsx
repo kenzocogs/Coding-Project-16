@@ -2,7 +2,7 @@ import { React } from 'react'
 import './App.css'
 // planning out future imports
 import ProductList from "./components/ProductList";
-import AddProductForm from "./components/AddProductForm.jsx";
+import AddProductForm from "./components/AddProductForm";
 
 
 
@@ -36,15 +36,23 @@ const products = [
    price: 329.99,
    description: "A cutting-edge monitor for vibrant viewing."
   }
-
+  
  ]
 
+ // task 7: implementing function to add new products
+ const addProduct = (newProduct) => {
+  setProducts([...products, newProduct]);
+}
+
+
 // passing list of products to ProductList component
+// now also passing to AddProductForm 
   return (
     <>
       <div>
-          <h1> Product Dashboard </h1>
+          <h1><em> Product Dashboard </em></h1>
           <ProductList products={products}/>
+          <AddProductForm addProduct={addProduct} />
       </div>
     </>
   )
